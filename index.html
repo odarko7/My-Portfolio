@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOB Portfolio</title>
+    <!-- link to fontawsome for inserting social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- link to css file -->
+   <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="#home" class="logo">Hi, I'm Obed Darko</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      </nav>
+      
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          
+        
+     
+
+<h1>
+  <span id="typing"></span>
+</h1>
+
+        
+         
+          <p>Building digital experience that merge creativity with technolgy</p>
+          <p class="highlight">Specializing in modern  development and UI/UX Designs</p>
+         <a href="CV.pdf" class="cta-button" download>
+  Download CV
+</a>
+
+        </div>
+        <div class="hero-image">
+          <img src="profile.png" alt="Profile" class="profile-img">
+        </div>
+      </section>
+      
+      <!-- Skills section -->
+      <section id="skills" class="skills">
+        <h2>Technical Experience</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+              <i class="fas fa-code"></i>
+              <h3>Frontend Development</h3>
+              <p>React, Vue, HTML, CSS3, JavaScript, ReactNative+Expo</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-server"></i>
+          <h3> Backend Development</h3>
+          <p>Node.js, Python, MongoDB, postgreSQL, Superbase,Appwrite</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>UI/UX Design</h3>
+          <p>Figma, Adobe XD, Prototyping, User Testing</p>
+        </div>
+      </section>
+      
+     
+     
+   
+
+  
+
+<section id="contact" class="contact">
+  <div class="contact-wrapper">
+
+    <!-- LEFT -->
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:yourgmail@gmail.com">darkoobed555555@gmail.com</a>
+      </p>
+
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+233XXXXXXXXX">+233558154361</a>
+      </p>
+    </div>
+
+    <!-- RIGHT -->
+    <form
+      action="https://formsubmit.co/darkoobed555555@gmail.com"
+      method="POST"
+      class="contact-form"
+    >
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+
+     
+     
+     
+     
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2026 DevOB, All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/233558154361" target="_blank" aria-label="WhatsApp"></a>
+          <a href="#"><i  class="fab fa-instagram"></i></a>
+      <a href="https://instagram.com/bgob_otis" target="_blank" aria-label="Instagram"></a>
+         
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+       <a href="https://linkedin.com/in/obed-darko-52b385248/" target="_blank" aria-label="LinkedIn"></a>
+      
+      
+     <a href="#"><i class="fas fa-envelope"></i></a>
+     <a href="mailto:darkoobed555555@gmail.com" aria-label="Email"></a>
+    </div>
+      </footer>
+ 
+ 
+ 
+ <script>
+  const text = "Full-Stack Developer";
+  const typingElement = document.getElementById("typing");
+
+  let index = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    if (!isDeleting) {
+      typingElement.textContent = text.slice(0, index++);
+      if (index > text.length) {
+        setTimeout(() => isDeleting = true, 1500);
+      }
+    } else {
+      typingElement.textContent = text.slice(0, index--);
+      if (index === 0) {
+        isDeleting = false;
+      }
+    }
+    setTimeout(typeEffect, isDeleting ? 60 : 100);
+  }
+
+  typeEffect();
+</script>
+
+ 
+    </body>
+</html>
